@@ -1,0 +1,16 @@
+created:
+    - database/factories/PostFactory.php
+    - database/factories/CommentFactory.php
+    - database/factories/CountryFactory.php
+    - database/migrations/2022_07_20_153830_create_posts_table.php
+    - database/migrations/2022_07_20_153831_create_comments_table.php
+    - database/migrations/2022_07_20_153832_create_countries_table.php
+    - app/Models/Post.php
+    - app/Models/Comment.php
+    - app/Models/Country.php
+    - database/seeders/PostSeeder.php
+    - database/seeders/CommentSeeder.php
+models:
+    Post: { title: 'string:400', content: longtext, user_id: id, published_at: 'nullable timestamp' }
+    Comment: { post_id: id, content: longtext }
+    Country: { name: string }
